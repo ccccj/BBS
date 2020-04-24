@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>娱乐八卦-喵喵</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/猫爪.png" sizes="32x32">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <style>
+    .fakeimg {
+        height: 200px;
+         background: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <!--footer-->
+  <footer style="background-color: #424188; padding: 5px 8px 5px 8px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="container" style="width: 1000px;">
+            <ul class="breadcrumb" style="background-color: #fff; padding: 0px 0px;">
+              <div class="col-md-9">
+                <li style="margin-top: 10px; margin-left: 60px;"><a href="index.html" style="color: #ef989e; margin: 100px 0px;">
+                  &laquo;&nbsp;返回首页&nbsp;&nbsp;</a></li>
+              </div>
+              <div class="col-md-1">
+                <!-- 按钮触发模态框 -->
+                <!--登录-->
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color: #424188; border-color: #424188; padding: 6px 9px;">
+                  登录
+                </button>
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="width: 400px; height: 360px">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                          &nbsp;&nbsp;&nbsp;&nbsp;喵喵论坛
+                        </h4>
+                      </div>
+                      <div class="modal-body">
+                        <!--用户名密码表单-->
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-8" style="padding-top: 15px;">
+                              <input type="text" class="form-control" id="firstname" placeholder="用户名/手机/邮箱" style="height: 40px;">
+                            </div>
+                            <div class="col-sm-2"></div>
+                          </div>
+                          <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-8" style="padding-top: 6px; padding-bottom: 20px;">
+                              <input type="text" class="form-control" id="lastname" placeholder="密码" style="height: 40px">
+                            </div>
+                            <div class="col-sm-2"></div>
+                          </div>
+                          <div class="form-group">
+                            <div class="modal-footer" style="text-align: center; padding-top: 25px; padding-bottom: 0px">
+                              <button type="button" class="btn btn-primary" style=" width: 230px; height: 40px; background-color: #ef989e; border-color: #ef989e;">登录</button>
+                            </div>
+                          </div>
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <img src="images/logo.png" alt="喵喵-logo-top" class="img-responsive">
+                          </div>
+                        </form>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal -->
+                </div>
+              </div>
+              <div class="col-md-1">
+                <!--注册-->
+                <!-- 按钮触发模态框 -->
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color: #424188; border-color: #424188; padding: 6px 9px;">
+                  注册
+                </button>
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content" style="width: 400px; height: 360px">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                          &nbsp;&nbsp;&nbsp;&nbsp;喵喵论坛
+                        </h4>
+                      </div>
+                      <div class="modal-body">
+                        <!--用户名密码表单-->
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label">用户名：</label>
+                            <div class="col-sm-8" style="padding-top: 15px;">
+                              <input type="text" class="form-control" id="firstname" placeholder="请输入用户名" style="height: 40px">
+                            </div>
+                            <div class="col-sm-2"></div>
+                          </div>
+                          <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">密码：</label>
+                            <div class="col-sm-8" style="padding-top: 6px; padding-bottom: 20px;">
+                              <input type="text" class="form-control" id="lastname" placeholder="请输入密码" style="height: 40px">
+                            </div>
+                            <div class="col-sm-2"></div>
+                          </div>
+                          <div class="form-group">
+                            <div class="modal-footer" style="text-align: center; padding-top: 25px; padding-bottom: 0px">
+                              <button type="button" class="btn btn-primary" style=" width: 230px; height: 40px; background-color: #ef989e; border-color: #ef989e;">立即注册</button>
+                            </div>
+                          </div>
+                          <div class="col-md-8"></div>
+                          <div class="col-md-4">
+                            <img src="images/logo.png" alt="喵喵-logo-top" class="img-responsive">
+                          </div>
+                        </form>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal -->
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/footer-->
+
+
+  <!--logo + 搜索-->
+  <div class="container" style="width: 1000px;">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <!--logo-->
+      <div class="col-md-2">
+        <img src="images/logo.png" alt="喵喵-logo-top" href="index.html" class="img-responsive" width="200" height="150">
+      </div>
+      <!-- 输入框 -->
+      <div class="container">
+        <div class="col-md-8">
+          <div style="padding-top:20px; padding-bottom:20px;">
+            <form class="bs-example bs-example-form" role="form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜帖、找人、搜模块" style="border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button" style="color: #ef989e;">Go!</button>
+                    </span>
+                  </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="width: 800px;">
+    <div class="row">
+
+      <!--标题-->
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="media-body" style="border: 3px dashed #f6999f; border-radius: 8px;">
+            <div style="margin: 20px;">
+              <p style="font-size: 25px; color: #653234;">记录一下这狗血的离婚风波，需要大家给点意见</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--/标题-->
+
+      <!--分页 更多-->
+      <ul class="pagination" style="margin-bottom: 0px;">
+        <li><a href="#" style="color: #ef989e;">&laquo;</a></li>
+        <li class="active"><a href="#" style="background-color: #ef989e; border-color: #ef989e;">1</a></li>
+        <!--若不能用 使用class="disabled-->
+        <li><a href="#" style="color: #ef989e;">2</a></li>
+        <li><a href="#" style="color: #ef989e;">3</a></li>
+        <li><a href="#" style="color: #ef989e;">4</a></li>
+        <li><a href="#" style="color: #ef989e;">...</a></li>
+        <li><a href="#" style="color: #ef989e;">尾页</a></li>
+        <li><a href="#" style="color: #ef989e;">&raquo;</a></li>
+      </ul>
+      <!--/分页 更多-->
+
+
+      <!--回复-->
+      <section id="recommend" style="margin-top: 8px;">
+        <!--per1-->
+        <div class="media">
+          <!--头像-->
+          <div class="media-left">
+            <img class="media-object" src="images/user1.png" alt=""  style="width: 100px;">
+            <h4 class="media-heading" style="margin: 20px; position: center; color: #545454;">
+              Timmy
+            </h4>
+          </div>
+          <!--/头像-->
+          <!--文字内容-->
+          <div class="media-body" style="border: 2px dashed #b9b8b8;">
+            <div style="margin: 20px;">
+              <p style="margin-bottom: 50px;">
+                记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见</p>
+              <hr>
+              <p align=right style="color: #777777; font-size: 12.6px;">
+                1楼&nbsp;&nbsp;2019-5-3&nbsp;&nbsp;12:34
+              </p>
+            </div>
+          </div>
+          <!--文字内容-->
+        </div>
+        <!--/per1-->
+
+        <!--per2-->
+        <div class="media" style="margin-top: -2px;">
+          <!--头像-->
+          <div class="media-left">
+            <img class="media-object" src="images/user2.png" alt=""  style="width: 100px;">
+            <h4 class="media-heading" style="margin: 20px; position: center; color: #545454;">
+              Amon
+            </h4>
+          </div>
+          <!--/头像-->
+          <!--文字内容-->
+          <div class="media-body" style="border: 2px dashed #b9b8b8;">
+            <div style="margin: 20px;">
+              <p style="margin-bottom: 50px;">
+                记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见</p>
+              <hr>
+              <p align=right style="color: #777777; font-size: 12.6px;">
+                2楼&nbsp;&nbsp;2019-5-3&nbsp;&nbsp;14:34
+              </p>
+            </div>
+          </div>
+          <!--文字内容-->
+        </div>
+        <!--/per2-->
+
+        <!--per3-->
+        <div class="media" style="margin-top: -2px;">
+          <!--头像-->
+          <div class="media-left">
+            <img class="media-object" src="images/user3.png" alt=""  style="width: 100px;">
+            <h4 class="media-heading" style="margin: 20px; position: center; color: #545454;">
+              Candy
+            </h4>
+          </div>
+          <!--/头像-->
+          <!--文字内容-->
+          <div class="media-body" style="border: 2px dashed #b9b8b8;">
+            <div style="margin: 20px;">
+              <p style="margin-bottom: 50px;">
+                记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见</p>
+              <hr>
+              <p align=right style="color: #777777; font-size: 12.6px;">
+                3楼&nbsp;&nbsp;2019-5-3&nbsp;&nbsp;17:34
+              </p>
+            </div>
+          </div>
+          <!--文字内容-->
+        </div>
+        <!--/per3-->
+
+        <!--per4-->
+        <div class="media" style="margin-top: -2px;">
+          <!--头像-->
+          <div class="media-left">
+            <img class="media-object" src="images/user4.png" alt=""  style="width: 100px;">
+            <h4 class="media-heading" style="margin: 20px; position: center; color: #545454;">
+              Lily
+            </h4>
+          </div>
+          <!--/头像-->
+          <!--文字内容-->
+          <div class="media-body" style="border: 2px dashed #b9b8b8;">
+            <div style="margin: 20px;">
+              <p style="margin-bottom: 50px;">
+                记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见记录一下这狗血的离婚风波，需要大家给点意见</p>
+              <hr>
+              <p align=right style="color: #777777; font-size: 12.6px;">
+                4楼&nbsp;&nbsp;2019-5-3&nbsp;&nbsp;19:34
+              </p>
+            </div>
+          </div>
+          <!--文字内容-->
+        </div>
+        <!--/per4-->
+
+        <!--分页 更多-->
+        <div class="container">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <ul class="pagination" style="position: center;">
+              <li><a href="#" style="color: #ef989e;">&laquo;</a></li>
+              <li class="active"><a href="#" style="background-color: #ef989e; border-color: #ef989e;">1</a></li>
+              <!--若不能用 使用class="disabled-->
+              <li><a href="#" style="color: #ef989e;">2</a></li>
+              <li><a href="#" style="color: #ef989e;">3</a></li>
+              <li><a href="#" style="color: #ef989e;">4</a></li>
+              <li><a href="#" style="color: #ef989e;">...</a></li>
+              <li><a href="#" style="color: #ef989e;">尾页</a></li>
+              <li><a href="#" style="color: #ef989e;">&raquo;</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <!--/分页 更多-->
+        <br></br>
+
+
+        <!--发表回复(表单)-->
+        <div class="media" style="margin-top: -2px;">
+          <!--头像-->
+          <div class="media-left">
+            <img class="media-object" src="images/user5.png" alt=""  style="width: 100px;">
+            <h4 class="media-heading" style="margin: 20px; position: center; color: #545454;">
+              Me
+            </h4>
+          </div>
+          <!--/头像-->
+          <div class="media-body"
+            <form role="form">
+              <div class="form-group">
+
+                <textarea position=center class="form-control" placeholder="立即回复" rows="7" style="border: 2px solid #ef989d; margin: 0px 30px; width: 630px; padding: 10px;"></textarea>
+              </div>
+            </form>
+            <div style="text-align: right; margin: 20px 30px;">
+              <button type="submit" class="btn btn-primary" style="width: 75px;">发表</button>
+            </div>
+
+          </div>
+
+
+        </div>
+        <!--/发表回复-->
+
+
+
+
+
+      </section>
+      <!--/回复-->
+    </div>
+  </div>
+
+
+
+    <!--footer-->
+    <!--想要footer固定在底栏使用：class="footer navbar-fixed-bottom"-->
+    <footer style="padding: 20px 8px 0px 8px; background-color: #333366;">
+      <div class="container" style="margin: 0px 150px;">
+        <div class="row">
+          <ul class="breadcrumb" style="text-align: center; background-color:#333366; padding: 0px; margin-bottom: 0px;">
+          <li><a href="index.html" style="color: #fff;">首页</a></li>
+          <li><a href="agreement.html" style="color: #fff;">@2019&nbsp;&nbsp;喵喵论坛协议</a></li>
+          <li><a href="yaoyan.html" style="color: #fff;">网络谣言警示</a></li>
+          <li class="active" style="color: #fff;">2019-05-23</li>
+        </ul>
+        <div class="col-md-5"></div>
+        <div class="col-md-4" style="padding-bottom: 10px;">
+          <img src="images/logo.png" class="img-responsive" alt="logo" width="100" height="50" style="text-align: center;">
+        </div>
+      </div>
+    </footer>
+    <!--/footer-->
+
+
+
+
+  <!--注意，jQuery一定要在Bootstrap之前，这是因为Bootstrap使用了jQuery-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--设置图片自动轮播时间为3000ms-->
+  <script>
+    $(function() {
+      $('#myCarousel').carousel({
+        interval: 3000
+      });
+    });
+  </script>
+  <!--/设置图片自动轮播时间为3000ms-->
+</body>
+
+</html>
